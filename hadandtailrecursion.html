@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>had and tail recursion example</title>
+    </head>
+    <body>
+        <script>
+            function example(x){
+                console.log(x);
+                if(x>0){
+                    example(x-1);
+                }
+                console.log(x);
+            }
+            let data=5;
+            example(data);
+        </script>
+    </body>
+</html>
