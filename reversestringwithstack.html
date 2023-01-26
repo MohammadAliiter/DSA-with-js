@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <title>stack in javaScript</title>
+    </head>
+ <body>
+    <script>
+        let array = [];
+        let currentsize = array.length;
+        function push(newval){
+            array[currentsize]=newval;
+            currentsize++;
+        }
+         function pop(){
+            lastremoveitem = array[currentsize-1];
+               currentsize--;
+                array.length=currentsize;
+                return lastremoveitem;
+         }
+         function reversestr(item){
+            for(i=0;i<item.length;i++){
+                push(item[i]);
+            }
+            for(i=0;i<item.length;i++){
+            item[i]= pop()
+            }
+         }
+        let str = "samaj";
+       str = str.split("")
+        reversestr(str)
+        console.log(str.join(""));
+    </script>
+ </body>
+</html>
