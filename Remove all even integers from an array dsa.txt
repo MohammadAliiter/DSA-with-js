@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1> Remove all even integers from an array</h1>
+        <script>
+            const inputData = [4,1,9,10,15,22,5,14];
+            removeEvenNumbers=(inputData) => {
+                let odds = []
+                for (let number of inputData) {
+                    if (number %2 != 0)
+                    odds.push(number)
+                }
+                return odds
+            }
+            console.log(inputData)
+            console.log(removeEvenNumbers(inputData))
+            
+         
+        </script>
+        
+    </body>
+    </html>
