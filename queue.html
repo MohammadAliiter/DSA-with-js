@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>queue in javascript</title>
+    </head>
+    <body>
+        <script>
+            let queue=[];
+            let currentsize=queue.length;
+            let max=3;
+            function enqueue(newvalue){
+                if(currentsize>=max){
+                    alert("queue is already full")
+                    
+                }
+           else {
+                queue[currentsize]=newvalue;
+                currentsize++;
+                }
+            }
+           function dequeue(){
+                if(currentsize>0){
+                    for(i=0;i<queue.length;i++){
+                        queue[i]=queue[i+1]
+                    }
+                    currentsize--;
+                    queue.length=currentsize;
+                }
+                else{
+                    alert("queue is already empty")
+                }
+            }
+            enqueue(4)
+            enqueue(14)
+            enqueue(30)
+            dequeue()
+            console.log(queue)
+        </script>
+    </body>
+</html>
