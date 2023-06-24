@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> DSA problem</title>
+    </head>
+    <body>
+        <script>
+            function misingNumber(data,N){
+
+                let sumofN = N*(N+1)/2;
+                let sumofA = 0;
+                 let L = data.length;
+                 for(let i = 0; i<L; i++){
+                 sumofA  += data[i]
+                 }
+                 let minsingNumber = sumofN - sumofA;
+                 return minsingNumber;
+                 
+            }
+           let data = [ 1,2,3,4,5,7,8];
+           let len = data.length-1;
+           let n = data[len];
+           let misnu = misingNumber(data,n);
+           console.log(misnu);
+
+        </script>
+    </body>
+</html>
