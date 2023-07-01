@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>binary Search in javascrpt</title>
+    </head>
+    <body>
+        <script>
+            let data = [1,2,3,4,5,6,8,9,10];
+            let find=10;
+            let start = 0;
+            let end = data.length;
+            let index;
+            while(start<end){
+                let mid =Math.floor((start+end)/2);
+                if(data[mid]==find){
+                   index=mid;
+                   break;
+                }
+                else if(data[mid]<find){
+                 start=mid+1;
+                }
+                else{
+                    end=mid-1;
+                }
+            }
+            console.log(index)
+        </script>
+    </body>
+</html>
